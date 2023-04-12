@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-import { BrowserRouter as Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import App from "./App";
 import { initialState } from "./context/initialState";
@@ -10,10 +10,10 @@ import { StateProvider } from "./context/StateProvider";
 import reducer from "./context/reducer";
 
 ReactDOM.render(
-  <Route>
-    <StateProvider initialState={initialState} reduser={reducer}>
+  <Router>
+    <StateProvider initialState={initialState} reducer={reducer}>
       <App />
     </StateProvider>
-  </Route>,
+  </Router>,
   document.getElementById("root")
 );
