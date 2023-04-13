@@ -12,8 +12,10 @@ body {
     "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-html, body{
+html,
+body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @tailwind base;
