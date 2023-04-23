@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
+=======
+import { useStateValue } from "../context/StateProvider";
+>>>>>>> 3c2658ca17a1c07c326746d4c515e1b1f89896d1
 import { motion } from "framer-motion";
 
 import {
@@ -10,6 +14,7 @@ import {
 } from "react-icons/md";
 import { categories } from "../utils/data";
 import Loader from "./Loader";
+<<<<<<< HEAD
 import {
   deleteObject,
   getDownloadURL,
@@ -20,6 +25,8 @@ import { storage } from "../firebase.config";
 import { getAllFoodItems, saveItem } from "../utils/firebaseFunctions";
 import { actionType } from "../context/reducer";
 import { useStateValue } from "../context/StateProvider";
+=======
+>>>>>>> 3c2658ca17a1c07c326746d4c515e1b1f89896d1
 
 const CreateContainer = () => {
   const [title, setTitle] = useState("");
@@ -33,6 +40,7 @@ const CreateContainer = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [{ foodItems }, dispatch] = useStateValue();
 
+<<<<<<< HEAD
   const uploadImage = (e) => {
     setIsLoading(true);
     const imageFile = e.target.files[0];
@@ -145,6 +153,13 @@ const CreateContainer = () => {
       });
     });
   };
+=======
+  const uploadImage = (e) => {};
+
+  const deleteImage = (e) => {};
+
+  const saveDetails = (e) => {};
+>>>>>>> 3c2658ca17a1c07c326746d4c515e1b1f89896d1
 
   return (
     <div className="w-full min-h-screen flex items-center justify-center">
@@ -282,5 +297,8 @@ const CreateContainer = () => {
 };
 
 export default CreateContainer;
+<<<<<<< HEAD
 
 //4.33.12
+=======
+>>>>>>> 3c2658ca17a1c07c326746d4c515e1b1f89896d1
